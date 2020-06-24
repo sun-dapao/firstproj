@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://8.129.189.151:3306/weeklyreport?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: jhplan
+    password: test123
+
+
+  thymeleaf:
+    encoding: UTF-8
+    suffix: .html  默认后缀
+    prefix: classpath:/template/  默认前缀
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #config-location: classpath:mybatis-config.xml
+  type-aliases-package: com.example.firstproj.entity
